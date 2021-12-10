@@ -126,11 +126,15 @@ async def _(e):
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"stats(.*)")))
 async def _(e):
     await stats(e)
-
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile("start")))
+async def _(e):
+    await start(e)
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"skip(.*)")))
 async def _(e):
     await skip(e)
-
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile("close")))
+async def _(e):
+    await close(e)
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile("help")))
 async def _(e):
     await help(e)
