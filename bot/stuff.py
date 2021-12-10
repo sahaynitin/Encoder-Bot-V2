@@ -63,19 +63,7 @@ async def about(event):
     )
 async def help(event):
     await event.edit(
-        f"**A Video Encoder Bot
-
-✶ This Bot Compress Videos With Negligible Quality Change.
-
-✶ Due to Quality Settings Bot Takes Time To Compress.
-
-✶ So Be patience And Send videos One By One After Completing.
-
-✶ Dont Spam Bot.
-
-✶ Choose Custom Compress For Rename And Custom Thumbnail.
-
-✶ Just Forward Video To Get Options**",
+        f"**A Video Encoder Bot\n\n✶ This Bot Compress Videos With Negligible Quality Change.\n\n✶ Due to Quality Settings Bot Takes Time To Compress.\n\n✶ So Be patience And Send videos One By One After Completing.\n\n✶ Dont Spam Bot.\n\n✶ Choose Compress For Rename And Custom Thumbnail.\n\n✶ Just Forward Video To Get Options**",
         buttons=[
             
             [Button.inline("HOME", data="start"),
