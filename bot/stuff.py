@@ -17,9 +17,8 @@ async def up(event):
 
 
 async def start(event):
-    ok = await event.client(GetFullUserRequest(event.sender_id))
     await event.reply(
-        f"**Hey {ok.user.first_name}\n\nThis is A CompressorBot Which Can Encode Videos.\n\nReduce Size of Videos With Negligible Quality Change\n**",
+        f"**Hey {event.sender.first_name}\n\nThis is A CompressorBot Which Can Encode Videos.\n\nReduce Size of Videos With Negligible Quality Change\n**",
         buttons=[
             
             [Button.url("Update Channel", url="github.com/1Danish-00/CompressorBot"),
