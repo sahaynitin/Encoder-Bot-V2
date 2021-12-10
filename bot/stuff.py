@@ -48,7 +48,7 @@ async def zylern(event):
 
 async def close(event):
     await event.edit(
-        f"""****"""
+        f"""**Closed 🔒**"""
     )
 async def about(event):
     await event.edit(
