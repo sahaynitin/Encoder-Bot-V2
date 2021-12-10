@@ -46,16 +46,29 @@ async def zylern(event):
 """
     )
 
-
-async def help(event):
-    await event.edit(
-        f"""**To check current ffmpeg code you can use** /getcode\n\n**You can change your ffmpeg code by executing following command.**\n\n`/setcode -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1`\n\n**To set custom thumbnail send me the image.**\n\n**Do /cmds For More**"""
-    )
 async def close(event):
     await event.edit(
         f"""****"""
     )
 async def about(event):
     await event.edit(
-        f"""****"""
+        f"****",
+        buttons=[
+            
+            [Button.inline("HOME", data="start"),
+                Button.url("HELP", data="help"),
+            ],
+        [Button.inline("Close", data="close")],
+  ],
+    )
+async def help(event):
+    await event.edit(
+        f"****",
+        buttons=[
+            
+            [Button.inline("HOME", data="start"),
+                Button.url("ABOUT", data="about"),
+            ],
+        [Button.inline("Close", data="close")],
+  ],
     )
