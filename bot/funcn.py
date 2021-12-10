@@ -183,8 +183,6 @@ async def skip(e):
 
 
 async def renew(e):
-    if str(e.sender_id) not in OWNER and event.sender_id !=DEV:
-        return
     await e.reply("**Cleared Queued, Working Files and Cached Downloads!**")
     WORKING.clear()
     QUEUE.clear()
@@ -216,8 +214,6 @@ async def getlogs(e):
 
 
 async def getthumb(e):
-    if str(e.sender_id) not in OWNER and event.sender_id !=DEV:
-        return
     await e.client.send_file(e.chat_id, file="/bot/thumb.jpg", force_document=False, caption="**Your Current Thumbnail.**")
 
 
@@ -229,8 +225,6 @@ async def getcode(e):
 
 
 async def clearqueue(e):
-    if str(e.sender_id) not in OWNER and event.sender_id !=DEV:
-        return
     await e.reply("**Cleared Queued Files!**")
     QUEUE.clear()
     return
