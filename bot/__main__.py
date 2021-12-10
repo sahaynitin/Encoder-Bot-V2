@@ -134,7 +134,9 @@ async def _(e):
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile("help")))
 async def _(e):
     await help(e)
-
+@bot.on(events.callbackquery.CallbackQuery(data=re.compile("about")))
+async def _(e):
+    await about(e)
 ########## AUTO ###########
 
 @bot.on(events.NewMessage(incoming=True))
