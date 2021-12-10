@@ -33,17 +33,12 @@ async def zylern(event):
 /help - __Get Detailed Help__
 /setcode - __Set Custom FFMPEG Code__
 /getcode - __Print Current FFMPEG Code__
-/logs - __Get Bot Logs__
 /ping - __Check Ping__
-/sysinfo - __Get System Info__
 /leech - __Leech Links And Compress Video__
 /renew - __Clear Cached Downloads__
 /clear - __Clear Queued Files__
 /showthumb - __Show Current Thumbnail__
 /speed - __Do A SpeedTest__
-/eval - __Execute An Argument__
-/bash - __Run Bash Commands__
-/cmds - __List Available Commands__
 """
     )
 
