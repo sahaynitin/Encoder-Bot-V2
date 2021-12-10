@@ -56,7 +56,7 @@ async def about(event):
         buttons=[
             
             [Button.inline("HOME", data="start"),
-                Button.url("HELP", data="help"),
+                Button.inline("HELP", data="help"),
             ],
         [Button.inline("Close", data="close")],
   ],
@@ -67,7 +67,7 @@ async def help(event):
         buttons=[
             
             [Button.inline("HOME", data="start"),
-                Button.url("ABOUT", data="about"),
+                Button.inline("ABOUT", data="about"),
             ],
         [Button.inline("Close", data="close")],
   ],
