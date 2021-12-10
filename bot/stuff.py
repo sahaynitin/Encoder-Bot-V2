@@ -33,16 +33,16 @@ async def zylern(event):
         f"""
 **Available Commands 🤖**
 
-/start - __Check Bot is Working Or Not__
-/help - __Get Detailed Help__
-/setcode - __Set Custom FFMPEG Code__
-/getcode - __Print Current FFMPEG Code__
-/ping - __Check Ping__
-/leech - __Leech Links And Compress Video__
-/renew - __Clear Cached Downloads__
-/clear - __Clear Queued Files__
-/showthumb - __Show Current Thumbnail__
-/speed - __Do A SpeedTest__
+/start - Check Bot is Working Or Not
+/help - Get Detailed Help__
+/setcode - Set Custom FFMPEG Code
+/getcode - Print Current FFMPEG Code
+/ping - Check Ping
+/leech - Leech Links And Compress Video
+/renew - Clear Cached Downloads
+/clear - Clear Queued Files
+/showthumb - Show Current Thumbnail
+/speed - Do A SpeedTest
 """
     )
 
@@ -52,7 +52,7 @@ async def close(event):
     )
 async def about(event):
     await event.edit(
-        f"**My Name : Encoder Bot\n\nSource : [Click Here](https://t.me/tellybots_digital)\n\nFramework : [Pyrogram](docs.pyrogram.org) \n\nLanguage : [Python](www.python.org)\n\nDeveloper : [Tellybots](https://t.me/tellybots_4u)**",
+        f"**My Name : Encoder Bot\n\nSource : [Click Here](https://t.me/tellybots_digital)\n\nFramework : [Pyrogram](docs.pyrogram.org)\n\nLanguage : [Python](www.python.org)\n\nDeveloper : [Tellybots](https://t.me/tellybots_4u)**",
         buttons=[
             
             [Button.inline("HOME", data="start"),
