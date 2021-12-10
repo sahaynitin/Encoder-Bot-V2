@@ -52,7 +52,7 @@ async def close(event):
     )
 async def about(event):
     await event.edit(
-        f"****",
+        f"**My Name : Encoder Bot\n\nSource : [Click Here](https://t.me/tellybots_digital)\n\nFramework : [Pyrogram](docs.pyrogram.org) \n\nLanguage : [Python](www.python.org)\n\nDeveloper : [Tellybots](https://t.me/tellybots_4u)**",
         buttons=[
             
             [Button.inline("HOME", data="start"),
