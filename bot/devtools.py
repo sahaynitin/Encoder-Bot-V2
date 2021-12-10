@@ -4,8 +4,6 @@ from .stuff import *
 
 
 async def eval(event):
-    if str(event.sender_id) not in OWNER and event.sender_id !=DEV:
-        return event.reply("**Sorry You're not An Authorised User!**")
     cmd = event.text.split(" ", maxsplit=1)[1]
     old_stderr = sys.stderr
     old_stdout = sys.stdout
@@ -51,8 +49,6 @@ async def aexec(code, event):
 
 
 async def bash(event):
-    if str(event.sender_id) not in OWNER and event.sender_id !=DEV:
-        return event.reply("**Sorry You're not An Authorised User!**")
     cmd = event.text.split(" ", maxsplit=1)[1]
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
