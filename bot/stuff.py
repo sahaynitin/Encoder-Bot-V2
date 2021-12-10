@@ -48,11 +48,18 @@ async def zylern(event):
 
 async def close(event):
     await event.edit(
-        f"""****"""
+        f"""**Closed**"""
     )
 async def about(event):
     await event.edit(
-        f"****",
+        f"**🤖 <b>Bot :** URL Uploader</b>\n
+ **👲 <b>Developer :** [Tellybots_4u](https://telegram.me/tellybots_4u)</b>\n
+ **👥 <b>Channel :** [Tellybots_4u](https://telegram.me/tellybots_4u)</b>\n
+ **❄️ <b>Credits :** Everyone in this journey</b>\n
+ **🍴 <b>Source :** [Click here](https://t.me/tellybots_digital)</b>\n
+ **📝 <b>Language :** [Python3](https://python.org)</b>\n
+ **📚 <b>Library :** [Pyrogram v1.2.0](https://pyrogram.org)</b>\n
+ **🌟 <b>Server :** [Heroku](https://heroku.com)</b>\n**",
         buttons=[
             
             [Button.inline("HOME", data="start"),
