@@ -22,7 +22,7 @@ async def start(event):
         buttons=[
             
             [Button.inline("HELP", data="help"),
-                Button.url("ABOUT", data="about"),
+                Button.inline("ABOUT", data="about"),
             ],
         [Button.inline("Close", data="close")],
   ],
